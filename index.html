@@ -545,16 +545,100 @@
             </li>
           </ul>
         </div>
+        <div class="footer-contact-form">
+          <p class="footer-sm-text">Subscribe</p>
+          <form class="subscribe-form" name="subscribtion_form">
+            <label class="footer-field" for="user_email"></label>
+            <input
+              class="footer-input"
+              type="email"
+              placeholder="E-mail"
+              name="user_email"
+              id="user_email"
+              required
+            />
+            <button class="sub-button" type="submit">
+              Subscribe<svg class="sub-icon" width="24" height="20">
+                <use href="./images/subscribe.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <!--Modal window-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-btn" type="button" data-modal-close>
+        <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="modal-icon" width="8" height="8">
             <use href="./images/close.svg#icon-close-black"></use>
           </svg>
         </button>
+        <strong class="modal-title"
+          >Leave your contacts and we will call you back</strong
+        >
+        <form class="modal-form" name="contact-form">
+          <label class="modal-form-label" for="user_name">Name</label>
+          <div class="modal-form-field">
+            <input
+              class="modal-form-input"
+              type="text"
+              name="user_name"
+              id="user_name"
+              required
+            />
+            <svg class="modal-form-icon" width="18" height="18">
+              <use href="./images/subscribe.svg#icon-person"></use>
+            </svg>
+          </div>
+          <label class="modal-form-label" for="user_phone">Phone</label>
+          <div class="modal-form-field">
+            <input
+              class="modal-form-input"
+              type="text"
+              name="user_phone"
+              id="user_phone"
+              required
+            />
+            <svg class="modal-form-icon" width="18" height="18">
+              <use href="./images/subscribe.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <label class="modal-form-label" for="user_email">Email</label>
+          <div class="modal-form-field">
+            <input
+              class="modal-form-input"
+              type="text"
+              name="user_email"
+              id="user_email"
+              required
+            />
+            <svg class="modal-form-icon" width="18" height="18">
+              <use href="./images/subscribe.svg#icon-email"></use>
+            </svg>
+          </div>
+          <label class="modal-form-label" for="user_comment">Comment</label>
+          <textarea
+            class="modal-form-message"
+            name="user_comment"
+            rows="5"
+            placeholder="Text input"
+          ></textarea>
+          <label class="modal-form-agreement">
+            <input
+              class="modal-form-agreement-box"
+              type="checkbox"
+              name="user_agreement"
+            />
+            <span class="modal-form-agreement-text"
+              >I accept the terms and conditions of the
+              <a class="modal-form-agreement-link" href=""
+                >Privacy Policy</a
+              ></span
+            >
+          </label>
+          <button class="modal-btn" type="submit">Send</button>
+        </form>
       </div>
     </div>
 
