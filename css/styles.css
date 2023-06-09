@@ -615,6 +615,7 @@ img {
   position: relative;
   display: block;
   color: #ffffff;
+  margin-right: 24px;
 }
 
 .footer-input::placeholder {
